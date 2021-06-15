@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random image</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: wheat;
+      }
+      .navigation {
+        font-family: cursive;
+        display: flex;
+        font-size: 20px;
+      }
+      li {
+        list-style: none;
+        padding: 10px 19px;
+        font-variant-caps: small-caps;
+      }
+      section {
+        height: 344px;
+
+        font-family: cursive;
+        margin: 3px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+      }
+      h1 {
+        font-size: 80px;
+        color: wheat;
+        opacity: 0.3;
+      }
+      p {
+        opacity: 0.3;
+        color: black;
+      }
+      header::before {
+        background: url("https://source.unsplash.com/1600x900/?dark") no-repeat
+          center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        opacity: 0.9;
+      }
+      li a {
+        text-decoration: none;
+        color: wheat;
+      }
+      .btn {
+        border-radius: 20px;
+        background-color: tomato;
+      }
+      .btn:hover {
+        background-color: steelblue;
+        box-shadow: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item"><a href="index.html">home</a></li>
+          <li class="item"><a href="food.html">food</a></li>
+          <li class="item"><a href="nature.html">Nature</a></li>
+          <li class="item"><a href="dark.html">Dark</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>Dark Image</h1>
+        <p>enjoy</p>
+        <div>
+          <input class="btn" type="button" value="New Image"
+          onClick="location.href=location.href"
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
